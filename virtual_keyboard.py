@@ -11,11 +11,12 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(max_num_hands=1)
 mp_draw = mp.solutions.drawing_utils
 
-# Keyboard layout
+# Keyboard layout (BACK added)
 keys = [
     ["Q","W","E","R","T","Y","U","I","O","P"],
     ["A","S","D","F","G","H","J","K","L"],
-    ["Z","X","C","V","B","N","M","SPACE"]
+    ["Z","X","C","V","B","N","M","BACK"],
+    ["SPACE"]
 ]
 
 final_text = ""
@@ -23,34 +24,47 @@ last_press_time = 0
 press_delay = 0.8
 
 def draw_keyboard(img):
-    start_x, start_y = 50, 200
+    start_x, start_y = 50, 220
     key_w, key_h = 60, 60
 
     for i, row in enumerate(keys):
         for j, key in enumerate(row):
-            x = start_x + j * key_w
-            y = start_y + i * key_h
+            if key == "SPACE":
+                x = start_x
+                y = start_y + i * key_h
+                w = key_w * 5
+            else:
+                x = start_x + j * key_w
+                y = start_y + i * key_h
+                w = key_w
 
-            cv2.rectangle(img, (x, y), (x+key_w, y+key_h),
+            cv2.rectangle(img, (x, y), (x + w, y + key_h),
                           (255, 0, 255), 2)
-            cv2.putText(img, key, (x+10, y+40),
+            cv2.putText(img, key, (x + 10, y + 40),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.8,
                         (255, 255, 255), 2)
 
 def get_key(ix, iy):
-    start_x, start_y = 50, 200
+    start_x, start_y = 50, 220
     key_w, key_h = 60, 60
 
     for i, row in enumerate(keys):
         for j, key in enumerate(row):
-            x = start_x + j * key_w
-            y = start_y + i * key_h
-            if x < ix < x+key_w and y < iy < y+key_h:
+            if key == "SPACE":
+                x = start_x
+                y = start_y + i * key_h
+                w = key_w * 5
+            else:
+                x = start_x + j * key_w
+                y = start_y + i * key_h
+                w = key_w
+
+            if x < ix < x + w and y < iy < y + key_h:
                 return key
     return None
 
 def distance(x1, y1, x2, y2):
-    return math.hypot(x2-x1, y2-y1)
+    return math.hypot(x2 - x1, y2 - y1)
 
 while True:
     success, frame = cap.read()
@@ -80,15 +94,18 @@ while True:
             if key and d < 30 and current_time - last_press_time > press_delay:
                 if key == "SPACE":
                     final_text += " "
+                elif key == "BACK":
+                    final_text = final_text[:-1]
                 else:
                     final_text += key
+
                 last_press_time = current_time
 
             mp_draw.draw_landmarks(frame, hand, mp_hands.HAND_CONNECTIONS)
 
-    # Text output box
-    cv2.rectangle(frame, (50, 120), (700, 170), (0, 255, 255), 2)
-    cv2.putText(frame, final_text, (60, 155),
+    # Output text box
+    cv2.rectangle(frame, (50, 130), (700, 180), (0, 255, 255), 2)
+    cv2.putText(frame, final_text, (60, 165),
                 cv2.FONT_HERSHEY_SIMPLEX, 1,
                 (255, 255, 255), 2)
 
